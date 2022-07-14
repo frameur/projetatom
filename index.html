@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>navigation circle animation</title>
+  </head>
+  <body>
+    <header class="nav" id="blur">
+      <a href="#" onclick="toggle1()">electron</a>
+      <a href="#" onclick="toggle()">proton</a>
+      <a href="#" onclick="toggle()">neutron</a>
+    </header>
+    <content class="circles">
+      <div class="cir1 electron"><a href="#" onclick="toggle1()"></a></div>
+      <div id="popup1">
+        <a class="close1" href="#" onclick="toggle1()">Close</a>
+        <h1>electron</h1>
+
+        <p>
+          L'électron est une particule de matière douée d'une masse (9,1 10-31
+          kg, soit 0,511 MeV/c2, avec c la vitesse de la lumière exprimée en
+          m/s) et chargée électriquement négativement (on la note e avec pour
+          valeur -1,6 10-19 C) qui est l'un des composants des atomes avec les
+          noyaux constitués de protons et de neutrons. À ce titre il est
+          responsable des propriétés physiques et chimiques des gaz, liquides et
+          solides (conductivité électrique, magnétisme, émission et absorption
+          de la lumière, liaisons chimiques) et même d'un quatrième état de la
+          matière, le plasma. Jusqu'à preuve du contraire, c'est une particule
+          élémentaire au même titre que les quarks qui composent les neutrons et
+          les protons. Ses propriétés sont décrites par les lois de la mécanique
+          quantique et dans le cadre d'une théorie quantique des champs, le
+          modèle électrofaible de Glashow-Salam-Weinberg, pilier du modèle
+          standard de la physique des hautes énergies. La physique quantique lui
+          donne donc aussi certaines propriétés ondulatoires comme le physicien
+          français Louis de Broglie a été le premier à le comprendre en
+          introduisant sa théorie des ondes de matière en 1923, ce qu'illustre
+          l'expérience d'interférence popularisée par Richard Feynman. La
+          découverte de l'électron Auparavant, les aspects corpusculaires de
+          l'électron avaient été démontrés par plusieurs chercheurs dont en
+          particulier le physicien britannique Joseph John Thomson qui fut en
+          fait le découvreur de l'électron avec ses expériences menées de 1896 à
+          1897. L'existence de charges électriques corpusculaire avait été
+          soupçonnée depuis un certain temps et les physiciens George Stoney et
+          George Fitzgerald avaient même proposé un nom pour ces corpuscules qui
+          se manifestaient dans des phénomènes électrostatiques, en particulier
+          lorsque l'on frotte de l'ambre. Comme ce matériau se nomme « ἤλεκτρον
+          / êlectron » en grec, ils ont tout naturellement été conduits à «
+          électron ».
+        </p>
+      </div>
+      <div class="cir2"></div>
+      <div class="cir3"></div>
+      <div class="atom" id="blur"><a href="#" onclick="toggle()"></a></div>
+      <div id="popup">
+        <a class="close" href="#" onclick="toggle()">Close</a>
+        <h1>proton - neutron</h1>
+
+        <p>
+            <h3>PROTON</h3>
+            Le proton est une des particules subatomiques appelées nucléons. Avec le neutron, il constitue le noyau des atomes. Ce n'est pas une particule élémentaire car elle est constituée de trois particules plus petites appelées quarks. Celles-ci sont liées entre elles par la force nucléaire forte décrite par des équations analogues à celles de l'électromagnétisme. La théorie décrivant cette force est la chromodynamique quantique ou QCD (de l'anglais Quantum ChromoDynamics). Elle prédit l'existence de cousins des photons que l'on appelle des gluons associés aux champs des forces de la QCD.
+
+            Le proton est une particule chargée positivement. Cette charge est en valeur absolue identique à celle de l'électron et à celle de son antiparticule chargée négativement, l'antiproton. Les quarks qui constituent le proton, deux quarks up et un quark down portent des charges électriques dont les valeurs sont des fractions de la charge électrique élémentaire du proton et de l'électron
+            <h3>NEUTRON</h3>
+            Le neutron est une particule neutre qui compose le noyau des atomes avec les protons. Pour cette raison, on l'appelle aussi, tout comme le proton, un nucléon. Il a été découvert en 1932 par James Chadwick.
+
+Ce n'est pas une particule élémentaire, pas plus que le proton, car il est composé de trois quarks : deux quarks u et un quark d, dont les charges électriques valent respectivement +2/3 et -1/3. Les quarks sont confinés dans le neutron, comme dans le cas des protons, par le champ de force nucléaire forte décrit par la chromodynamique quantique (encore appelée QCD pour Quantum ChromoDynamics, en anglais).
+        </p>
+    </content>
+    <script>
+      function toggle1() {
+        let blur = document.getElementById('blur')
+        blur.classList.toggle('active')
+        let popup1 = document.getElementById('popup1')
+        popup1.classList.toggle('active')
+      }
+      function toggle() {
+        let blur = document.getElementById('blur')
+        blur.classList.toggle('active')
+        let popup = document.getElementById('popup')
+        popup.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
